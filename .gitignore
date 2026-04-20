@@ -47,3 +47,5 @@ cloudflare-env.d.ts
 next-env.d.ts
 
 bun.lock
+
+.claude
