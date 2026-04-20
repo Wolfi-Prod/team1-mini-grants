@@ -1,0 +1,45 @@
+# ============================================
+# MiniGrants - Environment Variables
+# ============================================
+# Copy this file to .env.local and fill in your values
+# cp .sample_env .env.local
+
+# ============================================
+# DATABASE (MongoDB)
+# ============================================
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
+DB_NAME=avalanche_grants  # Optional - defaults to "avalanche_grants"
+
+# ============================================
+# AUTHENTICATION (Google OAuth)
+# ============================================
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+# ============================================
+# EMAIL SERVICE (Gmail SMTP)
+# ============================================
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_gmail_app_password
+
+# ============================================
+# CLOUD STORAGE (Cloudinary)
+# ============================================
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+# ============================================
+# BLOCKCHAIN / WEB3 (WalletConnect)
+# Status: Currently commented out in code
+# Uncomment when wallet features are enabled
+# ============================================
+# NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_walletconnect_project_id
+
+# ============================================
+# DEPLOYMENT / URL CONFIGURATION
+# Status: Currently commented out in code
+# Uncomment for production deployment
+# ============================================
+# NEXT_PUBLIC_BASE_URL=http://localhost:3000
+# VERCEL_URL=your_vercel_deployment_url

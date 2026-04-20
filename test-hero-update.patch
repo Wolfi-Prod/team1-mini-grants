@@ -1,0 +1,20 @@
+--- app/globals.css
++++ app/globals.css
+@@ -432,6 +432,17 @@
+   padding: clamp(60px, 8vh, 100px) var(--pad-x) var(--pad-x);
+   opacity: 1 !important;
+   transform: none !important;
++  position: relative;
++}
++
++.hero::after {
++  content: '';
++  position: absolute;
++  bottom: 0;
++  left: calc(var(--rail-w) * -1);
++  right: calc(var(--rail-w) * -1);
++  height: 1px;
++  background: var(--line);
+ }
+ 
+ .eyebrow {
